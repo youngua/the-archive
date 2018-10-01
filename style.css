@@ -1,0 +1,116 @@
+/* HEADER */
+#header {
+	position: fixed;
+	left: -0.5%;
+	right: 75.83%;
+	top: 20%;
+	bottom: 10%;
+	font-family: Euclid Flex Trial;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 63px;
+	font-size: 50px;
+	letter-spacing: 8px;
+	color: #000000;
+	z-index: 2;
+}
+
+#header span {
+	background-color: #ffffff;
+}
+
+/* DIRECTIONS */
+.directions {
+	border-left: 1px solid #000;
+	position: fixed;
+	top: 0px;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+	margin-right: 3%; /* change the table size to account for the white space needed*/
+	z-index: 1;
+}
+
+/* add overflow-x: hidden; */
+
+.directions-head {
+	position: absolute;
+	left: 35%;
+	top: 13%;
+}
+
+#directions-head-style {
+	font-family: Euclid Flex Trial;
+	font-style: italic;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 30px;
+
+	color: #000000;
+}
+
+/* ENTER Choose an image Drag it to the printer 
+Recieve your item via the printer */
+.directions-body {
+	position: absolute;
+	left: 40%;
+	top: 25%;
+}
+
+#directions-body-style, .numbers {
+	font-family: Menlo;
+	font-style: italic;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+	color: #000000;
+}
+
+/* ENTER Link */
+#directions-body-style a {
+	border: 2px solid #000000;
+	color: #000000;
+	background-color: #ffffff;
+	padding: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#directions-body-style a:hover {
+	background-color: red;
+}
+
+/* Ellipse */
+/* https://stackoverflow.com/questions/4861224/how-to-use-css-to-surround-a-number-with-a-circle */
+.ellipse {
+	display: inline-block;
+	width: 70px;
+	line-height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 40px;
+	border: 2px solid #000000;
+}
+
+/* Table of Images */
+.digital table, tr, td {
+	border: 2px solid #000000;
+	border-collapse: collapse;
+	width: 500px;
+	z-index: -1;
+}
+
+/* Draggable Objects */
+.digital img {
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	display: block;
+}
+
+.digital img:active {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
